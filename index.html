@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-size: contain;
+      background-repeat: repeat;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.93) 0%, rgba(255, 255, 255, 0.93) 100%),
+        url("https://i.ibb.co/chxvSGQ/2337149845-huge.jpg");
+      font-family: "Arial", sans-serif;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      color: black;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .container h2 {
+      background-color: #71c9f8;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .pricing-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .pricing-plan {
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      overflow: auto;
+    }
+
+    .plan-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #71c9f8;
+      margin-bottom: 10px;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 325px;
+      overflow-y: auto;
+    }
+
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+
+    .plan-button {
+      padding: 10px;
+      background-color: #71c9f8;
+      color: black;
+      border-radius: 5px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img src="https://seeklogo.com/images/T/twitter-x-logo-577BCAE525-seeklogo.com.png?v=638264860160000000" alt="x logo">
+  <div class="container">
+    <h2>Choose your plan</h2>
+  </div>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$3/month</div>
+      <ul class="plan-features">
+        <p>Includes all essential features like:</p>
+        <li>☑️ editing posts</li>
+        <li>☑️ longer posts & video uploads</li>
+        <li>☑️ reply prioritization</li>
+        <li>☑️ custom app icons</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$8/month</div>
+      <ul class="plan-features">
+        <p>Includes all Basic features plus:</p>
+        <li>☑️ a checkmark</li>
+        <li>☑️ reduced ads</li>
+        <li>☑️ access to ads revenue sharing</li>
+        <li>☑️ larger reply prioritization</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium+</div>
+      <div class="plan-price">$16/month</div>
+      <ul class="plan-features">
+        <p>Includes all Premium features plus:</p>
+        <li>☑️ no ads in the For You timeline</li>
+        <li>☑️ no ads in the Following timeline</li>
+        <li>☑️ largest reply prioritization</li>
+        <li>☑️ access to Grok</li>
+      </ul>
+      <button class="plan-button">Sign Up</button>
+    </div>
+  </div>
+</body>
+
+</html>
